@@ -1,4 +1,4 @@
-package com.godcoder.myhome.Controller;
+package com.godcoder.myhome.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
