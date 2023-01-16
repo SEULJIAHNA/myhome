@@ -38,17 +38,19 @@
                     th:errors="*{content}">
                     내용 에러 메세지</div>
             </div>
+            <!-- 글 쓰기 버튼 -->
+            <div class="text-right">
+                <a type="button" class="btn btn-primary" th:href="@{/board/list}">취소</a>
+                <button type="submit" class="btn btn-primary">확인</button>
+            </div>
     </div>
-    <div class="text-right">
-        <a type="button" class="btn btn-primary" th:href="@{/board/list}">취소</a>
-        <button type="submit" class="btn btn-primary">확인</button>
-    </div>
+    
     </form>
 
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Optional JavaScript
+     jQuery first, then Popper.js, then Bootstrap JS 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -57,7 +59,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 </body>
 
 </html>
