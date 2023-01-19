@@ -3,6 +3,7 @@ package com.godcoder.myhome.model;
 
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -21,4 +22,9 @@ public class Board {
     @Size(min=2, max=30, message = "제목은 2자 이상 30자 이하로 입력하세요.")
     private String title;
     private String content;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
+    @JsonIgnore
+    private User user;
 }
